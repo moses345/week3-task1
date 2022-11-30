@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inclass Exercise</title>
+    </head>
+    <body>
+
+        <p>This is a paragraph1</p>
+        <p>This is a paragraph2</p>
+        <p>This is a paragraph3</p>
+        <p>This is a paragraph4</p>
+        <p>This is a paragraph5</p>
+        <p>This is a paragraph6</p>
+        
+        <button type="button" onclick="display()">Click me</button>
+    </body>
+
+    <script>
+  
+        var p=document.getElementsByTagName('p');
+        function display()
+        {
+            for(let i=0;i<p.length;i=i+2)
+            {
+                p[i].style.color="red";
+            }
+        }
+    </script>
+</html>
